@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Question 1</title>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+          <div>
+            <h3>Choose your Cuisine</h3>
+          </div>
+          <div>
+            <h1 id="display"></h1>
+          </div>
+          <div>
+            <button onclick="showCuisine('Chineese')" type="button">Chineese</button>
+            <button onclick="showCuisine('Continental')" type="button">Continental</button>
+            <button onclick="showCuisine('Chettinad')" type="button">Chettinad</button>
+          </div>
+      </div>
+    </div>
+
+    <script>
+        function showCuisine(display){
+            var h1 = document.getElementById("display");
+            h1.textContent = display;
+        }
+    </script>
+</body>
+</html>

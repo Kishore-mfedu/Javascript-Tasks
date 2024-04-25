@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Question 2</title>
+</head>
+<body>
+    <div class="container">
+      <div class="card">
+            <button type="button" onclick="typing()">HELLO</button>
+            <div id="container"></div>
+      </div> 
+    </div>
+
+    <script>
+        function typing(){
+            var res = document.createElement("h1");
+            res.innerText = "Hello"
+
+            var Container = document.getElementById("container")
+
+            Container.appendChild(res);
+        }
+    </script>
+
+</body>
+</html>

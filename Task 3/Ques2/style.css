@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(204, 158, 176);
+}
+.card{
+    height:auto;
+    width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+button{
+    height: 50px;
+    width: 200px;
+    color: white;
+    border: none;
+    background-color: rgb(170, 140, 198);
+    border-radius: 20px;
+}
+#container{
+    padding: 10px;
+}
