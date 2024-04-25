@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+	<div class="container">
+		 <div class="calculator">
+			<div class="display">
+				<h1 id="res" ></h1>
+			</div>
+			<div class="box">
+				<button  type="button"  onclick="calculation('7')">7</button>
+				<button  type="button"  onclick="calculation('8')">8</button>
+				<button  type="button"  onclick="calculation('9')">9</button>
+				<button  type="button"  onclick="calculation('+')">+</button>
+				<button  type="button"  onclick="calculation('4')">4</button>
+				<button  type="button"  onclick="calculation('5')">5</button>
+				<button  type="button"  onclick="calculation('6')">6</button>
+				<button  type="button"  onclick="calculation('-')">-</button>
+				<button  type="button"  onclick="calculation('1')">1</button>
+				<button  type="button"  onclick="calculation('2')">2</button>
+				<button  type="button"  onclick="calculation('3')">3</button>
+				<button  type="button"  onclick="calculation('*')">*</button>
+				<button  type="button"  onclick="calculation('0')">0</button>
+				<button  type="button"  onclick="calculation('.')">.</button>
+				<button  type="button"  onclick="calculation('%')">%</button>
+				<button  type="button"  onclick="calculation('/')">/</button>
+
+				<button  class="AC"  type="button"  onclick=" cal = '';  
+                    document.getElementById('res').innerHTML='';">AC</button>
+
+				<button class="del"  type="button"  onclick="deletevalue()">DEL</button>
+
+				<button class="calculate"  type="button"  onclick="cal = eval(cal);
+					document.getElementById('res').innerHTML=cal;">=</button>
+			</div>
+	    </div>
+	</div>
+
+	<script>
+		let cal =  '';
+		let operator = '';
+		function calculation(value) {
+   		if (value === '+' || value === '-' || value === '*' || value === '/') {
+        	operator = value;
+        	if (cal !== '') {
+            	cal = eval(cal);
+            }
+            cal += operator;
+        } else {
+        	cal += value;
+        }
+        document.getElementById('res').innerHTML = cal;
+		}
+		function deletevalue(){
+    	cal = cal.toString().slice(0, -1);
+    	document.getElementById('res').innerHTML = cal;
+		}
+	</script>
+   
+</body>
+</html>

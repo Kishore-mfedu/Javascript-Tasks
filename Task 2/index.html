@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form_Validation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Login to Coding Market</h1>
+        <div class="box">
+          <label for="email">E-mail or Username</label>
+          <input
+            id="username"
+            class="user-box"
+            type="text"
+            placeholder="coding market"
+          />
+          <label for="pass">Password</label>
+          <input
+            id="password"
+            class="pass-box"
+            type="password"
+            placeholder="password"
+          />
+        </div>
+        <button type="button" onclick="validate()">Login</button>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <script>
+      function validate() {
+        var user = document.getElementById("username");
+        var pass = document.getElementById("password");
+        var outputDiv = document.getElementById("output");
+        var isValid = true;
+
+        if (
+          user.value.length < 4 &&
+          (pass.value.length < 6 || pass.value.length > 12)
+        ) {
+          outputDiv.textContent =
+            "Username should contain at least 4 letters and password should be between 6-12 characters.";
+          user.style.borderColor = "red";
+          pass.style.borderColor = "red";
+          isValid = false;
+        } else if (user.value.length < 4) {
+          outputDiv.textContent = "Username should contain at least 4 letters.";
+          user.style.borderColor = "red";
+          isValid = false;
+        } else if (pass.value.length < 6 || pass.value.length > 12) {
+          outputDiv.textContent = "Password should be between 6-12 characters.";
+          pass.style.borderColor = "red";
+          isValid = false;
+        } else {
+          outputDiv.textContent = "Login Successfully!!";
+          user.style.borderColor = "";
+          pass.style.borderColor = "";
+          outputDiv.style.color = "green";
+        }
+      }
+    </script>
+  </body>
+</html>
