@@ -6,7 +6,7 @@ const vPipe = document.querySelector(".v-pipe");
 
 let intervalId;
 let currentHeight = 100;
-let decreaseRate = 5; // Decrease the water level by 5% every 1 second
+let decreaseRate = 1; // Decrease the water level by 5% every 1 second
 let transitionDuration = 1; // Set the transition duration to 0.5 seconds
 
 function startEmptyingWater() {
@@ -35,7 +35,7 @@ but.addEventListener("click", function () {
   } else {
     but.style.backgroundColor = "green";
     startEmptyingWater();
-    intervalId = setInterval(startEmptyingWater, 1000); // Call startEmptyingWater every 1 second
+    intervalId = setInterval(startEmptyingWater, 100); // Call startEmptyingWater every 1 second
     waterFlow.style.display = "block"; // Show the water flow
   }
 });
