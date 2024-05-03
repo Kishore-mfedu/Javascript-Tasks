@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 150px;
+    margin: 100px;
+}
+
+.b1, .b2, .b3 {
+    height: 300px;
+    width: 280px;
+    border: 2px solid rgb(87, 84, 84);
+    border-top: 0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.three-box {
+    display: flex;
+    gap: 120px;
+}
+
+.water {
+    background-color: aqua;
+    width: 100%;
+    height: 80%;
+}
+
+.tap1, .tap2, .tap3 {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+}
+
+.pipe1, .pipe2, .pipe3 {
+  height: 410px;
+  width: 10px;
+  position: absolute;
+  background-color: aqua;
+  right: -50px;
+  bottom: -400px;
+  display: none;
+}
+
+
+.vessel {
+  height: 250px;
+  width: 100%;
+  border: 2px solid black;
+  border-top: 0;
+  display: flex;
+  align-items: end;
+}
+
+#vesselwater {
+  height:50%;
+  width: 100%;
+  background-color: aqua;
+  display: none;
+}
