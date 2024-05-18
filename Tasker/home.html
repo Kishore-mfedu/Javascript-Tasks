@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <title>Tasker-home</title>
+</head>
+<body>
+    <div class="head">
+        <img src="./Assets/taskerlogo.png" alt="logo" class="logo">
+    </div>
+    <div class="container">
+        <div class="card1"></div>
+        <div class="card2">
+            <h1>Welcome to Tasker</h1>
+            <div class="login-box">
+
+                <label for="email">Email</label>
+                <input  id="email" type="email" placeholder="Enter your email">
+                <div id="emailError" class="error-message"></div>
+
+                <label for="password">Password</label>
+                <input  id="password" type="password" placeholder="Enter your password">
+                <div id="passwordError" class="error-message"></div> 
+
+            </div>
+
+              <div class="check">
+                    <div class="ck-box">
+                        <input type="checkbox" value="checkbox" placeholder="access">
+                        <p>Remember me</p>
+                    </div>
+                    <div id="checkboxError" class="error-message"></div>
+                </div>
+                
+            <input id="sign_in" type="button" value="Sign In">
+            <p class="sign-p">Don't have an account? <a href="./signup.html">Sign Up</a></p>
+        </div>
+    </div>
+
+    <script src="./home.js"></script>
+
+</body>
+</html>

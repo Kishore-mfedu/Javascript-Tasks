@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./signup.css">
+    <title>Tasker-SignUp</title>
+</head>
+<body>
+     <div class="head">
+        <img src="./Assets/taskerlogo.png" alt="logo" class="logo">
+    </div>
+   <div class="container">
+        <div class="signup-sec">
+            <div class="card1">
+                <h1>Welcome to Tasker</h1>
+                <p class="reg">Register your account...</p>
+                <div class="login-box">
+
+                    <label for="email">Email</label>
+                    <input  id="email" type="email" placeholder="Enter your email">
+                    <div id="emailError" class="error-message"></div>
+
+                    <label for="password">Password</label>
+                    <input  id="password" type="password" placeholder="Create your password">
+                    <div id="passwordError" class="error-message"></div> 
+
+                </div>
+                <div class="check">
+                    <div class="ck-box">
+                        <input type="checkbox" value="checkbox" placeholder="access">
+                        <p>Remember me</p>
+                    </div>
+                    <div id="checkboxError" class="error-message"></div>
+                </div>
+                
+                <input id="sign_in" type="button" value="Sign Up">
+                <p class="sign-p">Already have an account. <a href="./home.html">Sign In</a></p>
+            </div>
+        </div>
+        <div class="iluss-sec">
+            <img src="./Assets/login.svg" alt="login-illus">
+        </div>
+   </div>
+
+   <script src="./signup.js"></script>
+
+</body>
+</html>

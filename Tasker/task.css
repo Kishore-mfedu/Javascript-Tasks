@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+body{
+    width: 100%;
+    height:100vh;
+}
+
+.side-bar{
+    background-color:rgb(240, 230, 247);
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 80px 0px;
+    z-index: 10;
+
+}
+.main-bar {
+    position: relative;
+    height: 100vh;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.s-list1,  .s-list3{
+    display: flex;
+    gap: 20px;
+}
+.s-list2{
+    display: flex;
+    gap: 16px;
+}
+
+#list-options{
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+#list-options option{
+    font-size: 14px;
+    
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 40px 0px 40px;
+    font-size: 20px;
+}
+.mini-img{
+  display: flex;
+}
+.m-img{
+    height: 150px;
+    width: 200px;
+    padding-right: 20px;
+}
+.foot{
+    display: flex;
+}
+#logout{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.log{
+    display: flex;
+    color: #1e3050;
+    align-items: baseline;
+    gap: 20px;
+}
+#a-log{
+    text-decoration: none;
+    color: #1e3050;
+    font-weight: bold;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head-line{
+    font-size: 50px;
+    color: rgb(122, 110, 130);
+    font-weight: bolder;
+    padding-top: 20px;
+    position: fixed;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding-top: 120px;
+    gap: 500px;
+    position: fixed;
+}
+.nav-task{
+    font-size: 25px;
+    font-weight: bold;
+    color: #1a3050;
+}
+.nav-bar{
+   display: flex;
+   align-items: baseline;
+   gap: 10px;
+}
+.but{
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    color: white;
+    background-color: #1e3050;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.fil{
+    padding-top: 5px;
+}
+.card2{
+    width: 80%;
+    margin-top: 15%;
+}
+.add-task{
+    height: 40px;
+    background-color: rgb(198, 186, 204);
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+#add-box{
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(200, 200, 212);
+    gap: 20px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    position: fixed;
+    left: 40%;
+    top: 35%;
+    display: none;
+}
+
+#t-name{
+    height: 40px;
+    width: 300px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+}
+#list-options1{
+    height: 40px;
+    width: 300px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    font-size: medium;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#add, #cancel{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: white;
+}
+#add{
+    color: green;
+    border-color: green;
+    font-weight: bold;
+    cursor: grab;
+}
+#cancel{
+    color: red;
+    border-color: red;
+    font-weight: bold;
+    cursor: no-drop;
+}
+
+
+/* -----todo list ----*/
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-container {
+  order: -1;
+}
+
+.add-task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-task {
+  margin-top: 20px;
+}
+
+#add-box {
+  margin-top: 10px;
+}
+.buts{
+    display: flex;
+    gap: 10px;
+}
+#con-msg{
+    height: 150px;
+    width: 320px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #1e3050;
+    position:fixed;
+    left: 50%;
+    top: 45%;
+    display: none;
+}
+#del, #can{
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    
+}
+#can{
+    border-color: red;
+    color: red;
+    font-weight: bold;
+    background-color: white;
+    cursor: no-drop;
+}
+#del{
+    border-color: blue;
+    color: blue;
+    font-weight: bold;
+    background-color: white;
+    cursor: grab;
+}
+
+/* ---------- -----------*/
+
+
+
+.task {
+  background-color: rgb(240, 230, 247);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.info {
+  margin-right: auto;
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/*--------    ----------*/
+
+.task-container {
+  max-height: 550px; /* Set a maximum height for the task container */
+  overflow-y: auto; /* Add vertical scroll if the content exceeds the container height */
+}
+
+.task {
+  /* Add styling for each task div */
+  margin-bottom: 10px; /* Add spacing between task divs */
+}
+
